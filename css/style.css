@@ -1,0 +1,506 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: black;
+    position: center;
+    background-repeat:inherit;
+    
+}
+
+/*Cabeçalho*/
+header {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'THE AMAZING SPIDER-MAN', 'Roboto';
+    border-bottom: 2px solid gray;
+    background-image: url(../img/background__menu.png);
+    background-position: bottom;
+}
+
+.logo2 {
+    margin-left: 30px;
+    align-items: center;
+    Width: 192px;
+    Height: 55px;
+    margin-left: 16px;
+    margin-bottom: 8px;
+    margin-top: 8px;
+}
+
+.logo2:hover {
+    transform: scale(1.15);
+    transition: 1.2s;
+}
+
+.decoration__menu {
+    height: 144px;
+    opacity: 70%;
+}
+
+ol {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-right: 16px;
+}
+
+.background__menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.menu__nav ol {
+    list-style-type: none;
+
+}
+
+.menu__nav li {
+    border: solid 2px transparent;
+    border-radius: 24px;
+    padding: 15px;
+    align-items: center;
+    justify-items: center;
+    transition: all 1.2s;
+}
+
+.menu__nav a {
+    font-size: 24px;
+    color: black;
+    text-decoration: none;
+    padding: 32px;
+
+}
+
+.menu__nav li:hover {
+    transform: scale(1.25);
+    border: solid 4px rgb(6, 47, 134);
+    background-image: url(../img/background__botton.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 15px;
+}
+
+/*.imagem5:hover {
+    border: 10px solid #136497;
+    border-radius: 50%;
+}
+*/
+
+.menu__nav a:hover {
+    font-size: 32px;
+    color: rgb(134, 38, 39);
+    text-decoration: none;
+}
+
+.decoration__menu:hover {
+    height: 144px;
+    opacity: 100%;
+    transform: scale(1.10);
+    transition: 1s;
+}
+/*Fim cabeçalho*/
+
+/*Banner*/
+.banner__spider_man {
+    height: 534px;
+    width: 100%;
+    background-image: url(../img/banner__spider_man.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: inset 0 0 10em black;
+}
+
+h3 {
+    color:white;
+    text-align: center;
+    padding-bottom: 32px;
+    padding-top: 32px;
+}
+/*Banner*/
+
+/*Cards*/
+.cards__spider {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.container___films {
+     background-image: url(../img/background__body.jpg);
+    gap: 70px;
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background-position: center;
+    background-size: cover;
+    padding-bottom: 50px;
+    box-shadow: inset 5em 5em 20em 20em black;
+}
+
+.cardfilm__1,
+.cardfilm__2,
+.cardfilm__3,
+.cardfilm__4,
+.cardfilm__5,
+.cardfilm__6,
+.cardfilm__7,
+.cardfilm__8 {
+    opacity: 35%;
+    Width: 308px;
+    Height: 412px;
+    border-radius: 32px;
+    background-color: rgb(229, 229, 229);
+    box-shadow: rgb(111, 130, 150) 0px 20px 30px -10px;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    
+    overflow-y: scroll;
+    scroll-behavior: initial;
+    overflow-x: hidden;
+    cursor: pointer;
+}
+
+.container__text h4 {
+    font-size: 24px;
+    text-align:center;
+}
+
+.container__text p {
+    padding: 16px;
+    line-height: 24px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.cardfilm__1:hover {
+    transform: scale(1.20);
+    transition: 2s;
+    text-decoration: none;
+    background-color: black;
+    color:white;
+    opacity: 100%;
+}
+
+.cardfilm__2:hover {
+    transform: scale(1.20);
+    transition: 2s;
+    text-decoration: none;
+    background-color: black;
+    color:white;
+    opacity: 100%;
+}
+
+.cardfilm__3:hover {
+    transform: scale(1.20);
+    transition: 2s;
+    text-decoration: none;
+    background-color: black;
+    color:white;
+    opacity: 100%;
+}
+
+.cardfilm__4:hover {
+    transform: scale(1.20);
+    transition: 2s;
+    text-decoration: none;
+    background-color: black;
+    color:white;
+    opacity: 100%;
+}
+
+.cardfilm__5:hover {
+    transform: scale(1.20);
+    transition: 2s;
+    text-decoration: none;
+    background-color: black;
+    color:white;
+    opacity: 100%;
+}
+
+.cardfilm__6:hover {
+    transform: scale(1.20);
+    transition: 2s;
+    text-decoration: none;
+    background-color: black;
+    color:white;
+    opacity: 100%;
+}
+
+.cardfilm__7:hover {
+    transform: scale(1.20);
+    transition: 2s;
+    text-decoration: none;
+    background-color: black;
+    color:white;
+    opacity: 100%;
+}
+
+.cardfilm__8:hover {
+    transform: scale(1.20);
+    transition: 2s;
+    text-decoration: none;
+    background-color: black;
+    color:white;
+    opacity: 100%;
+}
+
+.button__card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(1.05);
+    transition: 2s;
+    text-decoration: none;
+    color:white;
+}
+
+button {
+    border-radius: 5%;
+    background-color: rgb(21, 18, 156);
+    Width: 136px;
+    Height: 34px;
+}
+
+
+button a {
+    text-decoration: none;
+    font-size: 16px;
+    padding: 12px 28px 12px 28px;
+    color: white;
+
+}
+
+button:hover {
+    transition: 2s;
+    text-decoration: none;
+    background-color: red;
+    color:black;
+    
+}
+button a:hover {
+    transition: 2s;
+    color: black;
+}
+
+.container__backgroundfilm1,
+.container__backgroundfilm2,
+.container__backgroundfilm3,
+.container__backgroundfilm4,
+.container__backgroundfilm5,
+.container__backgroundfilm6,
+.container__backgroundfilm7,
+.container__backgroundfilm8 {
+    Width: 308px;
+    Height: 230px;
+    background-position: center;
+    background-size: 308px;
+    background-repeat: no-repeat;
+    border-radius: 32px;
+}
+
+.container__backgroundfilm1 {
+    background-image: url(../img/backgroundfilm1.jpg);
+}
+
+.container__backgroundfilm2 {
+    background-image: url(../img/backgroundfilm2.jpg);
+}
+
+.container__backgroundfilm3 {
+    background-image: url(../img/backgroundfilm3.jpg);
+}
+
+.container__backgroundfilm4 {
+    background-image: url(../img/backgroundfilm4.jpg);
+}
+
+.container__backgroundfilm5 {
+    background-image: url(../img/backgroundfilm5.jpg);
+}
+
+.container__backgroundfilm6 {
+    background-image: url(../img/backgroundfilm6.jpg);
+}
+
+.container__backgroundfilm7 {
+    background-image: url(../img/backgroundfilm7.jpg);
+}
+
+.container__backgroundfilm8 {
+    background-image: url(../img/backgroundfilm8.jpg);
+}
+/*Fim Cards*/
+
+/*Rodapé*/
+footer {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(229, 229, 229);
+}
+
+.dev__group {
+    display: flex;
+    flex-direction: row;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.student {
+    text-align: center;
+}
+
+footer img {
+    gap: 20px;
+    border-radius: 4px;
+    width: 80px;
+}
+
+.name__student {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.links {
+    margin-top: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.links img {
+    transition: all 0.7s;
+}
+
+.links img:hover {
+    text-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.data__dev {
+    font-family: 'THE AMAZING SPIDER-MAN', 'Roboto';
+    font-size: 16px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.data__dev p {
+    padding: 30px;
+}
+
+.homenage__headspider {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.homenage {
+    width: 150px;
+}
+
+.head__spider {
+    transition: all 1.2s;
+}
+
+.head__spider:hover {
+    -webkit-transform: rotateZ(360deg);
+    transform: rotatez(360deg);
+}
+/*Fim rodapé*/
+
+/*Responsividade mobile*/
+@media (max-width: 425px) {
+
+    nav {
+        display: none;
+
+    }
+    h3 {
+        font-size: .7rem;
+    }
+
+    .logo2 {
+        width: 13
+    }
+
+    .cardfilm{
+        height: 400px;
+        width: 308px;
+    }
+    footer {
+        font-size: 0.5rem;
+
+
+    }
+
+    footer img {
+        width: 50px;
+
+    }
+
+    .dev__group {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .links {
+        justify-content: center;
+        gap: 50px;
+    }
+    .data__dev {
+        font-size: .7rem;
+        padding-bottom: 20px;
+    }
+    .homenage__headspider{
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .head__spider {
+
+        width: 90px;
+        }
+}
+/*Responsividade mobile*/
+
+/*Responsividade Tablet*/
+@media (max-width: 768px) {
+
+    nav {
+        display: none;
+
+    }
+
+    .decoration__menu{
+        opacity: 100;
+    }
+    .container___films{
+        box-shadow: inset 1em 10em 20em 10em black;
+    }
+    .dev__group {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+}
+/*Responsividade Tablet*/
