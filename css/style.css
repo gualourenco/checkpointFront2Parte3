@@ -1,5 +1,3 @@
-@import url('http://fonts.cdnfonts.com/css/the-amazing-spider-man');
-
 * {
     box-sizing: border-box;
     padding: 0;
@@ -12,15 +10,14 @@ html {
 }
 
 body {
-    
     background-color: black;
-    
+    position: center;
+    background-repeat:inherit;
     
 }
 
 /*Cabeçalho*/
 header {
-    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -31,8 +28,8 @@ header {
 }
 
 .logo2 {
-    
-    
+    margin-left: 30px;
+    align-items: center;
     Width: 192px;
     Height: 55px;
     margin-left: 16px;
@@ -54,12 +51,13 @@ ol {
     display: flex;
     align-items: center;
     gap: 5px;
+    margin-right: 16px;
 }
 
 .background__menu {
     display: flex;
     align-items: center;
-    /* justify-content: space-around; */
+    justify-content: space-around;
 }
 
 .menu__nav ol {
@@ -116,7 +114,7 @@ ol {
 /*Banner*/
 .banner__spider_man {
     height: 534px;
-    width: 100vw;
+
     background-image: url(../img/banner__spider_man.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -141,9 +139,8 @@ h3 {
 }
 
 .container___films {
-    
-    background-image: url(../img/background__body.jpg);
-    gap: 100px;
+     background-image: url(../img/background__body.jpg);
+    gap: 70px;
     padding-top: 50px;
     display: flex;
     align-items: center;
@@ -155,14 +152,7 @@ h3 {
     box-shadow: inset 5em 5em 20em 20em black;
 }
 
-.cardfilm__1,
-.cardfilm__2,
-.cardfilm__3,
-.cardfilm__4,
-.cardfilm__5,
-.cardfilm__6,
-.cardfilm__7,
-.cardfilm__8 {
+.card__film {
     opacity: 35%;
     Width: 308px;
     Height: 412px;
@@ -300,14 +290,7 @@ button a:hover {
     color: black;
 }
 
-.container__backgroundfilm1,
-.container__backgroundfilm2,
-.container__backgroundfilm3,
-.container__backgroundfilm4,
-.container__backgroundfilm5,
-.container__backgroundfilm6,
-.container__backgroundfilm7,
-.container__backgroundfilm8 {
+.background__card{
     Width: 308px;
     Height: 230px;
     background-position: center;
@@ -349,36 +332,37 @@ button a:hover {
 }
 /*Fim Cards*/
 
-
 /*Rodapé*/
 footer {
-    width: 100vw;
     display: flex;
     flex-direction: column;
     background-color: rgb(229, 229, 229);
 }
 
 .dev__group {
-    width: 100vw;
     display: flex;
     flex-direction: row;
-    padding-top: 40px;
+    padding: 40px;
     display: flex;
     align-items: center;
-    justify-content:space-around;
+    justify-content: space-between;
 }
 .student {
     text-align: center;
 }
 
+.office{
+    font-size: 14px;
+}
+
 footer img {
     gap: 20px;
     border-radius: 4px;
-    width: 80px;
+    width: 60px;
 }
 
 .name__student {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
 }
 
@@ -389,13 +373,7 @@ footer img {
     justify-content: space-between;
 }
 
-.links img {
-    transition: all 0.7s;
-}
 
-.links img:hover {
-    text-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
-}
 
 .data__dev {
     font-family: 'THE AMAZING SPIDER-MAN', 'Roboto';
@@ -405,8 +383,7 @@ footer img {
 }
 
 .data__dev p {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding: 30px;
 }
 
 .homenage__headspider {
@@ -417,10 +394,12 @@ footer img {
 
 .homenage {
     width: 150px;
+    margin-left: 12px;
 }
 
 .head__spider {
     transition: all 1.2s;
+    margin-right: 12px;
 }
 
 .head__spider:hover {
@@ -428,6 +407,181 @@ footer img {
     transform: rotatez(360deg);
 }
 /*Fim rodapé*/
+
+
+
+/*Pagina Detail Film,*/
+.detail__film_cover {
+    height:534px;
+    margin: 50px;
+    background-image: url(../img/background__detailfilmbanner.jpg);
+    background-position: top;
+    background-size:contain;
+    background-repeat: no-repeat;
+    box-shadow: inset 22em 0 10em black;
+}
+.detail__title{
+    color:white; 
+    padding-left: 32px;
+    padding-top: 32px;
+}
+.detail__text{
+    color:white;
+    padding: 40px 200px;
+    line-height: 27px;
+    font-size: 16px;
+}
+
+.creators{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    
+}
+
+.creator_film {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+.creator_film h3 {
+    padding: 20px;
+    font-size: 1.6rem;
+}
+
+.creator_film p {
+    font-size: .8rem;
+}
+
+.trailer{
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+
+}   
+
+/*Pagina Login Film*/
+
+.main_login{
+
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+
+}
+
+.background_main_login {
+
+    background-image: url(../img/Background__menu.png);
+    
+}
+
+.login_logo {
+    padding-top: 10px;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+
+
+
+.login_logo2{
+
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    
+}
+
+.login_logo2 img {
+
+    height: 300px;
+
+}
+
+.form_imageformimage {
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    column-gap: 100px;
+   
+}
+
+.image_spidersense img{
+    height: 300px;
+}
+
+.form_login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 13px;
+
+}
+
+.label_login {
+
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.label_login input {
+    height: 35px;
+
+    padding-left: 5px;
+    border-radius: 10px;
+}
+
+.button_login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: scale(1.05);
+    transition: 2s;
+    text-decoration: none;
+    color:white;
+    border-radius: 5%;
+    background-color: red;
+    Width: 136px;
+    Height: 34px;
+}
+
+.button_login a {
+    text-decoration: none;
+    font-size: 16px;
+    padding: 12px 28px 12px 28px;
+    color: white;
+
+}
+
+.button_login:hover {
+    transition: 2s;
+    text-decoration: none;
+    background: rgb(34,37,195);
+    background: linear-gradient(0deg, rgba(34,37,195,1) 19%, rgba(255,0,0,1) 42%);
+    color:black;
+    
+}
+button a:hover {
+    transition: 2s;
+    color: black;
+}
+
+
+
 
 /*Responsividade mobile*/
 @media (max-width: 425px) {
@@ -483,6 +637,26 @@ footer img {
 
         width: 90px;
         }
+
+    .detail__film_cover{
+        height: 290px;
+        box-shadow: inset 6em 0 10em black;
+    }
+
+    .detail__text{
+    
+        padding: 40px;
+        line-height: 27px;
+        font-size: 16px;
+    }
+
+    .trailer{
+        height: 300px;
+        margin: 10px 0;
+        display: flex;
+        justify-content: center;
+
+    }  
 }
 /*Responsividade mobile*/
 
@@ -497,20 +671,19 @@ footer img {
     .decoration__menu{
         opacity: 100;
     }
+
+    
     .container___films{
-        background-size:cover;
-        background-repeat: no-repeat;
         box-shadow: inset 1em 10em 20em 10em black;
-    }
-     .homenage__headspider{
-        justify-content:space-between;
-        gap: 20px;
     }
     .dev__group {
         display: flex;
         align-items: center;
         flex-direction: column;
         gap: 20px;
+    }
+    .detail__film_cover{
+        box-shadow: inset 4em 5em 10em black;
     }
 
 }
